@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'items.dart';
 
 void main(List<String> args) {
   runApp(home());
@@ -26,16 +27,9 @@ class myapp extends StatefulWidget {
 class _myappState extends State<myapp> {
   @override
   Widget build(BuildContext context) {
-list(title, ){
-  return ListTile(
-        title: Text("$title"),
-              leading: Icon(Icons.add),
-              subtitle: Text("Library"),
-              onTap: () {},
-            );
-};
+
     return Scaffold(
-      backgroundColor:  Colors.teal,
+      backgroundColor:  Colors.lightGreenAccent,
       // AppBar
       appBar: AppBar(
         title: Text(
@@ -53,11 +47,35 @@ list(title, ){
         child: ListView(
           children: [
             list("One"),
+            Divider(
+              color: Colors.grey,
+              thickness: 0.5,
+            ),
             list("Two"),
+            Divider(
+              color: Colors.grey,
+              thickness: 0.5,
+            ),
             list("Three"),
+            Divider(
+              color: Colors.grey,
+              thickness: 0.5,
+            ),
             list("Four"),
+            Divider(
+              color: Colors.grey,
+              thickness: 0.5,
+            ),
             list("Five"),
+            Divider(
+              color: Colors.grey,
+              thickness: 0.5,
+            ),
             list("Six"),
+            Divider(
+              color: Colors.grey,
+              thickness: 0.5,
+            ),
             list("Seven"),
             
           ],
