@@ -15,6 +15,7 @@ class home extends StatelessWidget {
   }
 }
 
+///////////////
 class myapp extends StatefulWidget {
   const myapp({super.key});
 
@@ -25,11 +26,18 @@ class myapp extends StatefulWidget {
 class _myappState extends State<myapp> {
   @override
   Widget build(BuildContext context) {
+list(title, ){
+  return ListTile(
+        title: Text("$title"),
+              leading: Icon(Icons.add),
+              subtitle: Text("Library"),
+              onTap: () {},
+            );
+};
     return Scaffold(
-
-      // AppBar 
-      appBar: 
-      AppBar(
+      backgroundColor:  Colors.teal,
+      // AppBar
+      appBar: AppBar(
         title: Text(
           "Library",
           style: TextStyle(
@@ -39,27 +47,22 @@ class _myappState extends State<myapp> {
         backgroundColor: Colors.blueAccent,
       ),
 
-
-    // BODY
-    body: 
-    list("First"),
-
-      
+      // BODY
+      body: Padding(
+        padding: const EdgeInsets.all(10.0),
+        child: ListView(
+          children: [
+            list("One"),
+            list("Two"),
+            list("Three"),
+            list("Four"),
+            list("Five"),
+            list("Six"),
+            list("Seven"),
+            
+          ],
+        ),
+      ),
     );
   }
-}
-
-
-list(title, ){
-ListView(
-  children: [
-    ListTile(
-      title: Text("$title"),
-      leading: Icon(Icons.assignment_returned_sharp),
-      subtitle: Text("Library"),
-    ),
-  ],
-
-);
-
 }
