@@ -7,7 +7,10 @@ class One extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       home: Scaffold(
-        body: Text("data"),
+        body: Container(width: 500,
+        height: 400,
+        color: Colors.green,
+        ),
       ),
     );
   }

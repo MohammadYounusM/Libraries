@@ -25,7 +25,7 @@ class home extends StatelessWidget {
       initialRoute: 
       "/",
       routes: {
-        "/home": (context) => home(),
+        "/": (context) => home(),
         "/l1": (context) => One(),
         "/l2": (context) => Two(),
         "/l3": (context) => Three(),
@@ -123,3 +123,4 @@ class _myappState extends State<myapp> {
     );
   }
 }
+
