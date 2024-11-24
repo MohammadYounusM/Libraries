@@ -26,7 +26,9 @@ class _myappState extends State<myapp> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appba
+
+      // AppBar 
+      appBar: 
       AppBar(
         title: Text(
           "Library",
@@ -38,9 +40,26 @@ class _myappState extends State<myapp> {
       ),
 
 
-
+    // BODY
+    body: 
+    list("First"),
 
       
     );
   }
+}
+
+
+list(title, ){
+ListView(
+  children: [
+    ListTile(
+      title: Text("$title"),
+      leading: Icon(Icons.assignment_returned_sharp),
+      subtitle: Text("Library"),
+    ),
+  ],
+
+);
+
 }
