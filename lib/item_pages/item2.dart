@@ -12,9 +12,11 @@ class MyApp extends StatelessWidget {
         appBar: AppBar(
           title: Text("بازکردن وبسایت"),
           backgroundColor: Colors.yellow,
-          leading: IconButton(onPressed: (){
-            Navigator.pop(context);
-          }, icon: Icon(Icons.arrow_back)),
+          leading: IconButton(
+              onPressed: () {
+                Navigator.pop(context);
+              },
+              icon: Icon(Icons.arrow_back)),
         ),
         body: Center(
           child: Column(
@@ -23,7 +25,7 @@ class MyApp extends StatelessWidget {
               Padding(
                 padding: const EdgeInsets.all(10.0),
                 child: Text(
-                  "این صفحه به کاربران امکان می‌دهد با استفاده از دو دکمه، یک وب‌سایت را در مرورگر باز کنند یا به شماره تلفن مشخصی تماس بگیرند. این قابلیت با استفاده از کتابخانه قدرتمند url_launcher پیاده‌سازی شده است که برای باز کردن لینک‌ها، شماره‌گیری، ارسال ایمیل و ... در برنامه‌های Flutter استفاده می‌شود.",
+                  "این صفحه به کاربران امکان می‌دهد با استفاده از این دکمه، یک وب‌سایت را در مرورگر باز کنند. این قابلیت با استفاده از کتابخانه قدرتمند url_launcher پیاده‌سازی شده است که برای باز کردن لینک‌ها، شماره‌گیری، ارسال ایمیل و ... در برنامه‌های Flutter استفاده می‌شود.",
                   style: TextStyle(fontSize: 30, color: Colors.white),
                 ),
               ),

@@ -29,7 +29,7 @@ class home extends StatelessWidget {
         "/l1": (context) => WeatherPage(),
         "/l2": (context) => MyApp(),
         "/l3": (context) => Three(),
-        "/l4": (context) => Four(),
+        "/l4": (context) => provider(),
         "/l5": (context) => Five(),
         "/l6": (context) => Six(),
         "/l7": (context) => Seven(),
@@ -70,28 +70,28 @@ class _myappState extends State<myapp> {
         child: ListView(
           children: [
             
-            list(context, "HTTP", "l1"),
+            list(context, "آب‌وهوا", "l1"),
             Divider(
               color: Colors.grey,
               thickness: 0.5,
             ),
 
             /// Second
-             list(context ,"Two", "l2"),
+             list(context ,"بازکردن وبسایت", "l2"),
             Divider(
               color: Colors.grey,
               thickness: 0.5,
             ),
 
             // Third
-             list(context ,"Three", "l3"),
+             list(context ,"خاطره روزانه", "l3"),
             Divider(
               color: Colors.grey,
               thickness: 0.5,
             ),
 
             // Four
-             list(context ,"Foue", "l4"),
+             list(context ,"مدیریت وضعیت با Provider", "l4"),
             Divider(
               color: Colors.grey,
               thickness: 0.5,
