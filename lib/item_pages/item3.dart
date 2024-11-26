@@ -78,7 +78,7 @@ class _ThreeState extends State<Three> {
             SizedBox(height: 16),
             ElevatedButton(
               onPressed: _saveText,
-              child: Text("ذخیره متن"),
+              child: Text("ذخیره متن", style: TextStyle(color: Colors.green)),
               style: ElevatedButton.styleFrom(
                 backgroundColor: Colors.deepPurple,
                 textStyle: TextStyle(fontSize: 23, color: Colors.yellow),
