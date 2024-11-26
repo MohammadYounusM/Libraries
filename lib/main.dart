@@ -26,7 +26,7 @@ class home extends StatelessWidget {
       "/",
       routes: {
         "/home": (context) => home(),
-        "/l1": (context) => One(),
+        "/l1": (context) => WeatherPage(),
         "/l2": (context) => Two(),
         "/l3": (context) => Three(),
         "/l4": (context) => Four(),
